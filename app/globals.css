@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  /* Azul de república: el azul del folleto, en escala */
+  --color-republica-950: #0a1140;
+  --color-republica-900: #101c66;
+  --color-republica-800: #16269a;
+  --color-republica-700: #1e33b3;
+  --color-republica-100: #dfe5fa;
+  --color-republica-50: #eef1fc;
+
+  /* Oro de Monte Albán */
+  --color-oro: #c79a2b;
+  --color-oro-claro: #e6c56a;
+
+  /* Rojo grana cochinilla, para las llamadas a la acción */
+  --color-grana: #b3202b;
+  --color-grana-oscuro: #8f1821;
+
+  --color-tinta: #12183a;
+  --color-papel: #f5f6fa;
+
+  --font-display: "Alegreya Variable", Georgia, "Times New Roman", serif;
+  --font-sans: "Figtree Variable", ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+
+  --animate-entrada: entrada 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+
+  @keyframes entrada {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-papel);
+  color: var(--color-tinta);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-oro);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

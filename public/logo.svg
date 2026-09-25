@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="58" fill="#101c66"/>
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#c79a2b" stroke-width="3"/>
+  <path d="M60 24 84 36v22c0 17-10 28-24 36C46 86 36 75 36 58V36z" fill="#fff"/>
+  <path d="M60 32 76 40v17c0 12-7 20-16 26-9-6-16-14-16-26V40z" fill="#16269a"/>
+  <text x="60" y="66" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="17" fill="#e6c56a">ISBJ</text>
+</svg>
