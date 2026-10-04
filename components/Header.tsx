@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, LogIn } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 import { institucion, navegacion } from "@/lib/contenido";
 
@@ -32,13 +32,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a
-            href={institucion.portalUrl}
-            className="hidden items-center gap-2 rounded-md bg-republica-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-republica-800 sm:inline-flex"
-          >
-            <LogIn className="h-4 w-4" aria-hidden="true" />
-            Acceso alumnos
-          </a>
+          
           <button
             type="button"
             className="grid h-11 w-11 place-items-center rounded-md text-republica-900 hover:bg-republica-50 lg:hidden"
@@ -67,13 +61,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <a
-            href={institucion.portalUrl}
-            className="mt-3 flex items-center justify-center gap-2 rounded-md bg-republica-900 px-4 py-3 text-base font-semibold text-white"
-          >
-            <LogIn className="h-5 w-5" aria-hidden="true" />
-            Acceso alumnos
-          </a>
+          
         </nav>
       )}
     </header>
