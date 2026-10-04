@@ -1,9 +1,6 @@
 /**
  * CONTENIDO DEL SITIO
  * -------------------
- 
- * Las líneas marcadas con  // EJEMPLO  son datos de muestra que debes reemplazar
- * cuando la escuela te entregue la información real.
  */
 
 export const institucion = {
@@ -37,12 +34,12 @@ export const navegacion = [
 
 export type Programa = {
   id: "derecho" | "gastronomia" | "educacion" | "doctorado";
-  slug: string; // dirección de su página: /carreras/<slug>
+  slug: string; // dirección de página: /carreras/<slug>
   nombre: string;
   nivel: "Licenciatura" | "Doctorado";
   duracion: string;
   nota?: string;
-  revoe: string; // Verificar cada número contra el documento oficial
+  revoe: string; 
   resumen: string; 
   aprenderas: string[]; 
 };
@@ -113,25 +110,36 @@ export const programas: Programa[] = [
 
 export const valores = [
   {
-    titulo: "Calidad",
-    texto: "Programas con reconocimiento oficial y docentes comprometidos con tu formación.", // EJEMPLO
+    titulo: "Honestidad",
+    texto: "Hablar y actuar con la verdad siempre y en todo lugar.",
   },
   {
-    titulo: "Seriedad",
-    texto: "Trámites claros, reglas claras y seguimiento de tu avance semestre a semestre.", // EJEMPLO
+    titulo: "Compromiso",
+    texto: "Invertir nuestras capacidades y recursos para cumplir todo lo que se nos confía.",
   },
   {
-    titulo: "Pagos accesibles",
-    texto: "Costos pensados para que estudiar sea posible para ti y tu familia.", // EJEMPLO
+    titulo: "Responsabilidad",
+    texto: "Asumir el papel que nos corresponde y las consecuencias de nuestras acciones y decisiones.",
+  },
+  {
+    titulo: "Disciplina",
+    texto: "Actuar de manera ordenada, conforme a los lineamientos y normas que nos rigen.",
+  },
+  {
+    titulo: "Lealtad",
+    texto: "Desempeñarse fiel a las políticas institucionales, con entrega y apoyo incondicional en el rol que nos corresponda.",
+  },
+  {
+    titulo: "Respeto",
+    texto: "Aceptar la individualidad de los demás y acatar las normas y políticas institucionales.",
   },
 ];
 
 export const mision =
-  "Formar profesionistas con sentido ético y compromiso social, mediante programas de calidad reconocidos oficialmente, que contribuyan al desarrollo de sus comunidades y de Oaxaca."; // EJEMPLO
+  "SAGBA, Sociedad Civil, es una institución educativa que forma con calidad y pertinencia social, profesionales, investigadores y docentes con alto nivel, atendiendo a su desarrollo integral en los ámbitos académico, personal, profesional y social, de manera que se constituyan como agentes de cambio para la consecución de una sociedad que dé valor a la justicia, equidad, responsabilidad social, desarrollo, inclusión, cultura, corresponsabilidad, diversidad y respeto a los derechos humanos, ofreciendo educación de nivel superior en Santa María Jalapa del Marqués, Oaxaca.";
 
 export const vision =
-  "Ser una institución de educación superior de referencia en la región, reconocida por la seriedad de su trabajo académico y por abrir oportunidades reales a sus egresados."; // EJEMPLO
-
+  "Consolidarnos como la mejor oferta educativa dentro de la región del Istmo de Tehuantepec, por la calidad de su oferta académica en licenciatura y posgrado, el aporte a la investigación de alto valor académico, científico y social, la solidez de la difusión de la cultura que realiza, su compromiso de responsabilidad social y la vinculación con los sectores educativo, productivo, empresarial, público y social. SAGBA, Sociedad Civil, es una institución educativa de nivel superior, incluyente, flexible y líder en las transformaciones, y promotora de la movilidad social por medio de enfoques innovadores de enseñanza-aprendizaje.";
 export const pasos = [
   {
     titulo: "Elige tu programa",
